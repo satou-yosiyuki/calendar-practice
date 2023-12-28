@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
+const withTM = require("next-transpile-modules")(["@fullcalendar"]);
+module.exports = withTM({});
 
-module.exports = nextConfig
+module.exports = nextConfig;
